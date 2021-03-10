@@ -1,13 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* word */
+.active-word {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.word {
+  box-sizing: border-box;
+  padding: 3px;
+}
+.correct {
+  color: green;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.incorrect {
+  box-sizing: border-box;
+  padding: 3px;
+  font-weight: bold;
+  color: red;
+}
+
+/* home section */
+
+.home {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 20%;
+}
+
+.home__wordContainer {
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 25px;
+  margin: 2rem 0;
+}
+
+.home__input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home__input input {
+  width: 100%;
+  height: 45px;
+  text-indent: 5px;
+  font-size: 18px;
+}
+
+.home__input p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  background: #003045;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  height: 50px;
+  width: 70px;
+  box-sizing: border-box;
+}
+
+.home__reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  height: 50px;
+  width: 60px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  background: #eeeeee;
+}
+
+.home__reset:hover {
+  background: #cacaca;
 }
